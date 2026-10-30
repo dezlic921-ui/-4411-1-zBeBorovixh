@@ -1,0 +1,88 @@
+Задача 3 ( все остальные делали на уроке)
+import random
+
+number = random.randint(1, 10)
+
+print("Gra vgaday chislo»!")
+print("I zagadav shislo ot 1 - 10. Y teba est 3 popitki.")
+
+for i in range(3):
+    guess = int(input("Vidi chislo: "))
+
+    if guess == number:
+        print("Amigo! Ti vgadav chislo!")
+        break
+    elif guess > number:
+        print("menhe")
+    else:
+        print("bolshe")
+else:
+    print("dodep?!")
+    print("shislo bylo:", number)
+
+
+
+Задача 4
+
+start = int(input("Poshatok: "))
+end = int(input("Vod: "))
+
+for i in range(start, end + 1):
+    print(i)
+
+Задача 5 
+
+n = int(input("Chislo: "))
+
+for i in range(n, 0, -1):
+    if i % 2 == 0:
+        print(i, end=" ")
+
+Задача 6
+
+n = int(input("Shislo 1: "))
+
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial *= i
+
+print("Factorial?:", factorial)
+
+Задача 7
+
+
+points = int(input("Bali: "))
+
+if points >= 0 and points <= 49:
+    print("Ploho")
+elif points <= 69:
+    print("Nais")
+elif points <= 89:
+    print("Chotko")
+elif points <= 100:
+    print("Krasava marat")
+else:
+    print("Ti shto dyrak")
+
+Задача 8
+
+
+a = float(input("Первое число: "))
+b = float(input("Второе число: "))
+
+action = input("Ведіть дію (+, -, *, /): ")
+
+if action == "+":
+    print("Результат:", a + b)
+elif action == "-":
+    print("Результат:", a - b)
+elif action == "*":
+    print("Результат:", a * b)
+elif action == "/":
+    if b == 0:
+        print("Ділення на нуль")
+    else:
+        print("Результат:", a / b)
+else:
+    print("Невідома дія")
